@@ -1,12 +1,17 @@
-n = int(input("Введите число: "))
-i = 2
-result = 1
-while i <= n:
-    result *= i # result = result * i
-    i += 1
-print(f'{n}! = {result}')
-    
-    
+N = abs(int(input('put number N ')))
+stop = 0
+P = 2
+for i in range(N):
+    if stop != 1:
+        P = P ** i
+        if P <= N:
+            print(P, end=' ')
+            P = 2
+        else:
+            stop = 1
+    else:
+        i = N
+        
    
     
 
